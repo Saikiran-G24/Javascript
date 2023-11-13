@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dom manipulations and getElementById('').innerHTML</title>
+    <button onclick="buttonclick()"> click here</button><br>
+    <input id='Show' Type='text' placeholder="Username"></input>
+    <input id='Show1' Type='password' placeholder="Enter password"></input>
+
+<h2 id="User">checking onclick operations by using dom and getElementById and also using function</h2>
+</head>
+<body>
+    <script>
+        function buttonclick()
+        {
+        let a=document.getElementById('Show').value
+        let b=document.getElementById('Show1').value
+        
+if(a===b)
+{
+    alert(' if you want acess one particular element with unique Id Matched')
+}
+else{
+alert(' Not matched')
+}
+       }
+
+        </script>
+    
+</body>
+</html>

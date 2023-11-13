@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model is DOM</title>
+    <p>the paragrapg 1</p>
+    <p>the paragrapg 2</p>
+    <p>the paragrapg 3</p>
+    <p>the paragrapg 4</p>
+    <p>the paragrapg 5</p>
+    <p>If you want access particular type of tag on entire HTML document</p>
+
+</head>
+<body>
+    <script>
+        var change=document.getElementsByTagName('p');
+//         change[0].style.color='red'
+//         change[1].style.color='yellow'
+// change[2].style.fontWeight='bold'
+// change[3].style.background='blue'
+// change[4].style.fontStyle='italic'
+for(i=0;i<change.length;i++)
+change[i].style.fontStyle='italic'
+    </script>
+</body>
+</html>

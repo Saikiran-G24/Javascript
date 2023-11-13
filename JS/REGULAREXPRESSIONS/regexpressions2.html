@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><h2>Document object model and regular expressions in js charecterset and ranges </></title>
+    <h2>regular expression can be sequence of charecters that forms a search partten.when you serach for data in a text,you can use search partten to describe what you are searching for."It can be a single charecter or more complicated patten."</h2>
+
+ 
+    <input id="id1" type='text' placeholder="Enter username">
+    <lable id="id3" style="color: red;visibility: hidden;">Invalid Username</lable><br><br>
+     <input id="id2" type="password" placeholder="Enter password"><br><br>
+    <input id="idE" type="text" placeholder="Enter E-Mail"><br><br> 
+
+    <button onclick="dis()" type="button">button</button>
+    
+</head>
+<body>
+    <script>
+    function dis()
+    {
+        var user1=document.getElementById('id1')
+        var user2=document.getElementById('id2')
+        var user3=document.getElementById('idE')
+        var reg1=/[a-z]/i;//here we write expression for In-sensitive of letters 
+       var  reg2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
+        var reg3=/@gmail.com/;//here we write expression for only sensitive of letters 
+        if(user1.value==''||user2.value==''||user3.value=='')
+        {
+            if(user1.value=='')
+        {
+            alert('Enter username')
+        }
+       else if(user2.value=='')
+        {
+            alert('Enter password')
+        }
+        else if(user3.value=='')
+        {
+            alert('Enter E-mail')
+        }
+        }
+    if(reg1.test(user1.value))
+    {
+    }
+    
+}   
+    </script>
+</body>
+</html>

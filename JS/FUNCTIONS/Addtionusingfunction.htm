@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+        <div style="margin-top: 30px;">
+       <label>Number1: </label> <input id="num1" type="text" placeholder="enter value"></div>
+       <div> <label>Number2: </label><input id="num2" type="number" placeholder="enter value"></div>
+       <div style="position: relative;top: 20px;left:100px">
+        <button  onclick="sum()">ADD</button>
+        </div>
+        Sum is  <div id="sum">Hello</div>
+        
+        <script>
+            var result = 0;
+        function sum()
+        {
+            console.log("input",document.getElementById("num1"))
+            var num1= Number(document.getElementById("num1").value);
+            var num2= Number(document.getElementById("num2").value);
+             result=num1^num2;
+             document.getElementById("sum").innerHTML = result
+                        //   console.log(result)
+            //document.write( '<h1>sum of two no is</h1> ',result);
+            
+        }
+       // document.write( '<h1>sum of two no is</h1> ',result);
+    </script>
+        
+        </body>
+    </html>

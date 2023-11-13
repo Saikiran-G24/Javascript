@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document object model regular expressions mobile number checking</title>
+<input type="text" placeholder='Eg:saikiran0756@gmail.com' id="id1"></input>
+<label id="id2" style="color: orangered;visibility:hidden">Enter 10-digit mobile number</label><br><br>
+<button onclick='dis()' type="button" >Button</button>
+</head>
+<body>
+    <script>
+        function dis()
+        {
+            let user1=document.getElementById('id1')
+            let user2=document.getElementById('id2')
+            let reg=/^([a-zA-Z0-9\.-]+)@([a-z]{2,10}).([a-z]{2,10}).([a-z]{2,10})?$/;  //   /^([a-zA-Z0-9\.-]+)@gmail.com$     
+            if(reg.test(user1.value))
+            {
+user2.style.visibility='visible'
+user2.style.color='green'
+user2.innerHTML='valid'
+            }
+            else
+            {
+              alert('Not meet the criteria')
+    user2.innerHTML='Invalid'
+    user2.style.visibility='visible'
+
+
+
+            }
+        }
+        </script>
+    
+</body>
+</html>

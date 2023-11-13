@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script>
+      function age()
+       {
+        if (document.getElementById("s1").value==document.getElementById("s2").value)
+         {
+            document.getElementById("res").innerHTML=" both are equal";
+        } 
+        else if (document.getElementById("s1").value>document.getElementById("s2").value)
+
+        {
+            document.getElementById("res").innerHTML=" first element greater then second";
+
+        }
+        else 
+        {
+          document.getElementById("res").innerHTML=" first element lessthen then second";
+        }
+      }
+    </script>
+  </head>
+  <body style="background-color: aqua;color: blue;">
+    <label>Enter your age:</label>
+    <input
+      type="text"
+       id="s1" 
+      placeholder="enter age as per adher"><br />
+      <input type="text" id="s2">
+    <button type="button"onclick="age()">verify</button>
+    <p style="color: red;background-color: yellow;font-size:30px" id="res">helloo</p>
+
+  </body>
+</html>

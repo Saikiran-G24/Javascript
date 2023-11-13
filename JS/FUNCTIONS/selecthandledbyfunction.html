@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <label>select any one of those</lable>
+    <select id="dis1" onchange="myfunction()"> 
+    <option>static</option>
+    <option>subtraction</option>
+    <option>multiplication</option>
+    <option>hello</option>
+    <option>programming</option>
+    
+    </select>
+    <div>value selected is: <lable id="value"></lable></div>
+    <script>
+        function myfunction()
+        {
+            var result=document.getElementById('dis1').value;
+            console.log(result)
+            document.getElementById("value").innerHTML=result;
+
+
+
+            // document.write('<h1>selected one is</h1>',result)
+        }
+
+        </Script>
+    </body>
+    </html>

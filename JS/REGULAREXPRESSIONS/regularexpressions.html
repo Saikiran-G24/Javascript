@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document object model and regular expressions</title>
+    <h2>regular expression can be sequence of charecters that forms a search partten.when you serach for data in a text,you can use search partten to describe what you are searching for."It can be a single charecter or more complicated patten."</h2>
+<form onsubmit=" return dis()" action="new.html">
+    <input id="id1" type='text' placeholder="Enter username">
+    <lable id="id3" style="color:chartreuse;visibility: hidden;"></lable><br><br>
+    <input id="id2" type="password" placeholder="Enter password"><br><br>
+    <input id="idE" type="text" placeholder="Enter E-Mail"><br><br>
+
+    <button type="submit">submit</button>
+    </form>
+</head>
+<body>
+    <script>
+    function dis()
+    {
+        var user1=document.getElementById('id1')
+        var user2=document.getElementById('id2')
+        var user3=document.getElementById('idE')
+        var reg=/15R91A04/i;//here we write expression for In-sensitive of letters 
+
+        var reg1=/@gmail.com/;//here we write expression for only sensitive of letters 
+
+        if(reg.test(user1.value))//here we are using test method for a match in string.returns true(or)false.
+        {
+            alert('reg exp code is valid username')
+        }
+        else if(reg1.test(user3.value))
+        {
+            alert('@gmail.com')
+        }
+        else
+        {
+            alert(' reg exp is in-valid username')
+            return false;
+
+        }
+    }
+
+    </script>
+</body>
+</html>

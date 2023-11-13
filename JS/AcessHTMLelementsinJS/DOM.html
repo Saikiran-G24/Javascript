@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document object model regular expressions mobile number checking</title>
+<input type="text" placeholder='Enter text' id="id1"></input><br><br>
+<input type="text" placeholder='Enter text' id="id2"></input><br><br>
+<button onclick='dis()' type="button" >Button</button><br>
+<p id="res">Result =</p>
+
+</head>
+<body>
+    <script>
+        function dis()
+        {
+            let user1=document.getElementById('id1').value
+            let user2=document.getElementById('id2').value
+            let user3=document.getElementById('res')
+document.getElementById('res').innerHTML='Result='+(user1+user2)
+console.log(user1+user2)
+        }
+        </script>
+    
+</body>
+</html>

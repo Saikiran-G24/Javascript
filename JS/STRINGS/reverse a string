@@ -1,0 +1,14 @@
+//reverse a string
+let res="";
+let s="hello"
+let l=s.length
+console.log(l)
+function dis()
+{
+    for(i=4;i>=0;i--)
+    {
+       res=res+s[i];
+    }
+}
+dis()
+console.log(res)

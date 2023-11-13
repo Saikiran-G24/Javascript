@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model is dom manipulation </title>
+    <p class="user">This is paragraph 1</p>
+    <p class="user">This is paragraph 2</p>
+    <p class="user">This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <a href="#" class="user">This is anchor tag</a>
+    <p>It is more flexibility By applying clases to only those elements which you want to acess.Regadless what type of element is</p>
+</head>
+<body>
+    <script>
+        var arr=document.getElementsByClassName('user')
+        for(i=0;i<arr.length;i++)
+        {
+        arr[i].style.fontStyle='italic'
+            arr[i].style.fontWeight='bold'}
+
+        </script>
+    
+</body>
+</html>
